@@ -1,6 +1,6 @@
 <b>Dr-ubepieczenia.pl</b>
 
-Project overseen by <a href="mailto:bartosz@yprojects.pl" target="_blank">bartosz@yprojects.pl</a>
+Project overseen by <a href="https://github.com/BartoszY" target="_blank">BartoszY</a>
 
 Application created with:
 
