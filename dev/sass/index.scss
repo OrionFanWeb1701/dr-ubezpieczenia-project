@@ -1,0 +1,23 @@
+/* Main of styles */
+
+@forward './base/reset';
+@forward './base/typography';
+@forward './base/colors';
+@forward './base/animation';
+
+@forward './components/buttons';
+@forward './components/swiper';
+
+@forward './layout/partners';
+@forward './layout/change-box';
+@forward './layout/needs';
+@forward './layout/meter';
+@forward './layout/advantages';
+@forward './layout/how-work';
+@forward './layout/opinions';
+@forward './layout/contact';
+
+@forward './layout/global';
+@forward './layout/heading';
+@forward './layout/footer';
+// @forward './pages/404';

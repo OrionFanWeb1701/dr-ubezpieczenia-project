@@ -1,0 +1,69 @@
+@use './variables' as *;
+
+/* Colors of text */
+
+.color-text-yellow {
+	color: var(--color-yellow);
+}
+
+.color-text-white {
+	color: var(--color-white);
+}
+
+.color-text-blue {
+	color: var(--color-blue);
+}
+
+.color-text-red {
+	color: var(--color-red);
+}
+
+.color-text-gray-light {
+	color: var(--color-gray-light);
+}
+
+.color-text-gray-medium {
+	color: var(--color-gray-medium);
+}
+
+.color-text-gray-regular {
+	color: var(--color-gray-regular);
+}
+
+.color-text-dusky {
+	color: var(--color-gray-dusky);
+}
+
+.color-text-green {
+	color: var(--color-green);
+}
+
+.color-text-dark {
+	color: var(--color-dark);
+}
+
+.color-change-box {
+	color: var(--color-change-box);
+}
+
+.color-heading-text {
+	color: var(--color-heading-text);
+}
+
+.color-meter {
+	color: var(--color-meter);
+}
+
+/* Colors of backgrounds */
+
+.color-section-gray {
+	background-color: var(--color-background);
+}
+
+.color-section-dark {
+	background-color: var(--color-dark);
+}
+
+.color-section-blue {
+	background-color: var(--color-blue);
+}

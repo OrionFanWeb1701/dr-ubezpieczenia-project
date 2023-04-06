@@ -1,0 +1,109 @@
+@use '../base/variables' as *;
+
+/* Section how it's working */
+
+.section-how-work {
+	.section__description {
+		.section-text {
+			.section-title--designation {
+				span {
+					font-weight: 600;
+					color: var(--color-black);
+				}
+				span::after {
+					bottom: 0;
+					height: 8px;
+				}
+			}
+		}
+	}
+
+	.btn-box {
+		@include tablet {
+			flex-direction: row;
+			column-gap: 16px;
+		}
+		@include desktop {
+			padding: 0 426px;
+		}
+
+		.button {
+			@include tablet {
+				margin-bottom: 0;
+			}
+
+			@include desktop {
+				margin-right: 0;
+			}
+		}
+
+		.button--message {
+			margin-bottom: 0;
+
+			&:hover {
+				background-color: var(--color-white);
+			}
+		}
+	}
+}
+
+.how-work {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+	padding: 40px 0;
+
+	@include desktop {
+		flex-direction: row;
+		column-gap: 24px;
+		justify-content: space-between;
+	}
+
+	&__card {
+		padding: 0 24px;
+		background-color: var(--color-background);
+		border: 1px solid var(--color-black-opacity);
+		border-radius: var(--border-radius-box);
+		text-align: center;
+
+		&:nth-child(2) {
+			border: none;
+			background-color: var(--color-white);
+		}
+
+		@include desktop {
+			display: flex;
+			flex-direction: column;
+			width: 397px;
+		}
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 144px;
+	}
+
+	&__img-box {
+		position: relative;
+	}
+
+	&__number {
+		position: absolute;
+		right: -12px;
+		bottom: -8px;
+	}
+
+	&__description {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		.section-text--description {
+			padding: 16px 0 32px;
+		}
+	}
+}

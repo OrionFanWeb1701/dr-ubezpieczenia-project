@@ -1,0 +1,167 @@
+@use '../base/variables' as *;
+
+/* Section contact */
+.section-contact {
+	.small-heading {
+		@include desktop {
+			text-align: left;
+		}
+	}
+	.section__description {
+		.section-title {
+			@include desktop {
+				text-align: left;
+			}
+
+			span {
+				content: '\A';
+				display: block;
+				white-space: pre;
+
+				@include mobile-landscape {
+					display: inline;
+				}
+
+				@include tablet {
+					display: inline;
+				}
+			}
+		}
+
+		.section-text {
+			@include desktop {
+				text-align: left;
+			}
+		}
+	}
+}
+
+.section-contact-boxes {
+	@include desktop {
+		display: flex;
+	}
+}
+
+.section-contact-other {
+	@include desktop {
+		order: 2;
+	}
+
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		padding: 40px 0;
+
+		@include mobile-landscape {
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		@include tablet {
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		@include desktop {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, fr);
+			margin-top: 50px;
+			padding: 0 0 0 117px;
+		}
+	}
+
+	.section-subtitle {
+		display: none;
+
+		@include desktop {
+			display: inline-block;
+			padding: 48px 0 0 117px;
+		}
+	}
+
+	&__box {
+		display: flex;
+		background-color: var(--color-white);
+		border-radius: var(--border-radius-box);
+
+		@include mobile-landscape {
+			flex-direction: column;
+			padding-top: 24px;
+			width: 187px;
+		}
+
+		@include tablet {
+			flex-direction: column;
+			padding-top: 24px;
+			width: 187px;
+		}
+	}
+
+	&__img {
+		padding: 8px 16px;
+
+		@include mobile-landscape {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		@include tablet {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		span {
+			@include tablet {
+				content: '\A';
+				display: block;
+				white-space: pre;
+			}
+		}
+
+		@include mobile-landscape {
+			padding: 20px 0;
+		}
+
+		@include tablet {
+			display: block;
+			padding: 20px 0;
+		}
+	}
+}
+
+.section-contact-form {
+	@include desktop {
+		padding: 48px 0 64px 0;
+		width: 787px;
+		order: 1;
+	}
+
+	.section-subtitle {
+		@include tablet {
+			text-align: center;
+		}
+
+		@include desktop {
+			text-align: left;
+		}
+	}
+
+	&__box {
+		padding-top: 50px;
+
+		@include desktop {
+			padding-right: 116px;
+			border-right: 1px solid #dddddd;
+		}
+	}
+}

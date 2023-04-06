@@ -1,0 +1,133 @@
+@use '../base/variables' as *;
+
+/* Section of heading */
+
+.section-heading {
+	width: 100%;
+	height: 100vh;
+	background-image: url('../../dev/img/bg-banner-small.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@include mobile-landscape {
+		background-image: url('../../dev/img/bg-banner-large.jpg');
+		background-position: left;
+	}
+
+	@include tablet {
+		background-image: url('../../dev/img/bg-banner-large.jpg');
+		background-position: 60%;
+	}
+
+	.container {
+		height: 100%;
+
+		@include mobile-landscape {
+			display: flex;
+			align-items: center;
+		}
+
+		@include tablet {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__box {
+		padding-top: 151px;
+
+		@include mobile-landscape {
+			padding-top: 0;
+			width: 70%;
+		}
+
+		@include tablet {
+			padding-top: 0;
+			width: 65%;
+		}
+
+		@include desktop {
+			width: 50%;
+		}
+
+		.small-heading {
+			text-align: left;
+		}
+
+		.heading {
+			padding: 8px 0 16px;
+
+			@include desktop {
+				padding: 16px 0 24px;
+			}
+		}
+
+		.heading-text {
+			padding-bottom: 32px;
+
+			@include tablet {
+				padding-bottom: 120px;
+			}
+
+			@include desktop {
+				padding-bottom: 64px;
+			}
+		}
+	}
+
+	&__more {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 29px;
+
+		@include mobile-landscape {
+			bottom: 15px;
+		}
+
+		@include desktop {
+			left: 64px;
+			bottom: 64px;
+			transform: translateX(0);
+		}
+
+		.shake-vertical {
+			animation: shake-vertical 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+
+			@include mobile-landscape {
+				width: 10px;
+			}
+		}
+
+		.section-text {
+			display: none;
+
+			@include desktop {
+				display: inline;
+				padding-left: 30px;
+			}
+		}
+	}
+
+	&__social {
+		display: none;
+
+		@include desktop {
+			display: block;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 34px;
+
+			.section-text {
+				display: block;
+				transform: rotate(-90deg);
+			}
+
+			.section-text:nth-child(1) {
+				margin-bottom: 96px;
+			}
+		}
+	}
+}

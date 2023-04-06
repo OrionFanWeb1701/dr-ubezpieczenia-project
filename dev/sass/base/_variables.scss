@@ -1,0 +1,61 @@
+/* Variables */
+
+@font-face {
+	font-family: 'sf-pro-display-bold';
+	src: url('../../fonts/sfprodisplaybold-webfont.woff2') format('woff2'),
+		url('../../fonts/sfprodisplaybold-webfont.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--sf-pro-display-bold: 'sf-pro-display-bold', sans-serif;
+
+	--color-dark: #18181b;
+	--color-dark-opacity: #18181b40;
+	--color-black: #222222;
+	--color-black-opacity: #22222240;
+	--color-white: #ffffff;
+	--color-yellow: #facc15;
+	--color-blue: #3b82f6;
+	--color-red: #e14343;
+	--color-green: #14b8a6;
+
+	--color-background: #f4f4f5;
+
+	--color-heading-text: #d4d4d8;
+	--color-backgroud-social: #f6f6f6;
+	--color-background-change-box: #e4e4e7;
+	--color-change-box: #52525b;
+	--color-meter: #cccccc;
+
+	--color-gray-light: #aaaaaa;
+	--color-gray-regular: #a1a1aa;
+	--color-gray-medium: #71717a;
+	--color-gray-dusky: #666666;
+	--color-gray-dark: #3f3f46;
+
+	--border-radius-btn: 28px;
+	--border-radius-slider: 4px;
+	--border-radius-box: 6px;
+	--border-radius-circle: 50%;
+}
+
+@mixin mobile-landscape {
+	@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: 1280px) {
+		@content;
+	}
+}

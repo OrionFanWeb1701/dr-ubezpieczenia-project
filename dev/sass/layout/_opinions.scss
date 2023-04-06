@@ -1,0 +1,120 @@
+@use '../base/variables' as *;
+
+/* Section opinions */
+
+.section-opinion {
+	.container {
+		@include desktop {
+			display: grid;
+			grid-template-columns: 42% 58%;
+		}
+	}
+
+	.btn-box {
+		@include tablet {
+			display: none;
+		}
+
+		.button--message {
+			margin-bottom: 0;
+
+			&:hover {
+				background-color: var(--color-gray-dark);
+			}
+		}
+	}
+}
+
+.opinion-box {
+	.small-heading {
+		@include desktop {
+			text-align: left;
+		}
+	}
+
+	.section__description {
+		h3.section-title {
+			@include desktop {
+				padding-bottom: 40px;
+			}
+
+			span {
+				@include desktop {
+					content: '\A';
+					display: block;
+					white-space: pre;
+				}
+			}
+		}
+
+		.section-title,
+		.section-text {
+			@include desktop {
+				text-align: left;
+			}
+		}
+	}
+
+	p.section-title {
+		padding: 0 0 8px 0;
+	}
+
+	&__stars {
+		display: flex;
+		column-gap: 12px;
+		padding: 17px 0 40px;
+
+		@include tablet {
+			justify-content: center;
+		}
+
+		@include desktop {
+			justify-content: flex-start;
+			padding-bottom: 0;
+			padding-top: 25px;
+		}
+	}
+}
+
+.opinion-slider {
+	overflow: hidden;
+
+	&__element {
+		padding: 30px 24px 24px;
+		background-color: var(--color-gray-dark);
+		border-radius: var(--border-radius-box);
+
+		p.section-text {
+			@include tablet {
+				text-align: left;
+			}
+		}
+
+		@include desktop {
+			padding: 41px 32px 36px;
+		}
+	}
+
+	&__quote {
+		padding-bottom: 15px;
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		padding-top: 24px;
+	}
+
+	&__img {
+		margin-right: 12px;
+		border-radius: var(--border-radius-circle);
+	}
+
+	&__user {
+		width: 70%;
+
+		.section-text--user {
+			padding-bottom: 4px;
+		}
+	}
+}

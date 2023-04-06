@@ -1,0 +1,39 @@
+@use '../base/variables' as *;
+
+/* Styles of global */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 24px;
+	width: 100%;
+	max-width: 1366px;
+
+	@include desktop {
+		padding: 0 64px;
+	}
+}
+
+.section {
+	padding: 40px 0;
+
+	@include tablet {
+		padding: 64px 0;
+	}
+
+	.section-title {
+		padding: 8px 0 24px;
+
+		@include tablet {
+			padding: 16px 0 24px;
+		}
+
+		&--meter {
+			padding: 0 0 16px;
+		}
+	}
+}

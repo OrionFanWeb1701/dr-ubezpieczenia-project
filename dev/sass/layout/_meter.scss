@@ -1,0 +1,28 @@
+@use '../base/variables' as *;
+
+/* Section meters */
+
+.meter-content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+
+	@include mobile-landscape {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	@include tablet {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	@include desktop {
+		padding: 0 157px;
+	}
+
+	.section-title,
+	.section-text {
+		text-align: center;
+	}
+}

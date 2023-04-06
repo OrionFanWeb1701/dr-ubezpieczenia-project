@@ -1,0 +1,125 @@
+@use '../base/variables' as *;
+
+/* Advantages */
+
+.color-section-blue {
+	.container {
+		position: relative;
+
+		@include desktop {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.small-heading,
+	.section-title,
+	.section-text {
+		@include desktop {
+			text-align: left;
+		}
+	}
+
+	.section-text {
+		@include tablet {
+			padding: 0 72px;
+		}
+
+		@include desktop {
+			padding: 0;
+		}
+	}
+
+	.section__description {
+		@include desktop {
+			width: 80%;
+		}
+
+		.section-title {
+			@include desktop {
+				width: 80%;
+			}
+		}
+	}
+
+	.section__img {
+		padding-top: 40px;
+
+		@include desktop {
+			width: 100%;
+			grid-column: 1/2;
+			grid-row: 1/5;
+			padding-top: 0;
+		}
+
+		.img {
+			border-radius: var(--border-radius-box);
+
+			@include tablet {
+				position: absolute;
+				bottom: 0;
+				right: 48px;
+				width: 200px;
+			}
+
+			@include desktop {
+				position: static;
+				width: max-content;
+			}
+		}
+	}
+
+	.btn-box {
+		@include tablet {
+			display: none;
+		}
+
+		.button--message {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.advantages-box {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+	padding: 40px 0;
+
+	@include tablet {
+		padding-left: 24px;
+		padding-bottom: 0;
+	}
+
+	@include desktop {
+		padding-left: 0;
+	}
+
+	&__element {
+		display: flex;
+
+		&:first-child {
+			.section-subtitle {
+				font-size: 20px;
+				line-height: 28px;
+			}
+		}
+
+		.section-subtitle {
+			padding-left: 16px;
+		}
+	}
+
+	&__circle {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__point {
+		width: 40px;
+		height: 40px;
+		background-color: var(--color-dark-opacity);
+		border-radius: var(--border-radius-circle);
+	}
+}

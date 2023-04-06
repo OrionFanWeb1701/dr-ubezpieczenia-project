@@ -1,0 +1,105 @@
+@use '../base/variables' as *;
+
+/* Change box */
+
+.offers-change-box {
+	padding: 32px 0 24px;
+	width: 100%;
+
+	@include tablet {
+		padding: 48px 0 48px;
+	}
+
+	&__bar {
+		background-color: var(--color-background-change-box);
+		border-radius: var(--border-radius-btn);
+
+		@include desktop {
+			margin: 0 auto;
+			width: 441px;
+		}
+	}
+
+	&__selection {
+		display: flex;
+		align-items: center;
+		margin-bottom: 32px;
+
+		@include tablet {
+			margin-bottom: 48px;
+		}
+
+		.button {
+			margin: 3px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 22px;
+
+			&:active {
+				border: none;
+			}
+
+			&--white {
+				&:hover {
+					background-color: var(--color-white);
+				}
+			}
+		}
+	}
+
+	.open {
+		display: grid;
+	}
+
+	&__content {
+		display: none;
+		grid-template-rows: repeat(4, 1fr);
+		row-gap: 24px;
+
+		@include tablet {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			gap: 24px;
+		}
+
+		@include desktop {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: 1fr;
+		}
+	}
+
+	&__card {
+		padding: 0 24px;
+		background-color: var(--color-white);
+		border-radius: var(--border-radius-box);
+		text-align: center;
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 144px;
+	}
+
+	&__description {
+		.section-text--description {
+			padding: 16px 0 24px;
+
+			@include tablet {
+				padding: 24px 0;
+			}
+		}
+
+		.section-text--ask {
+			display: block;
+			margin-bottom: 32px;
+			transition: color 0.3s;
+
+			&:hover {
+				color: darken(#e14343, 10%);
+			}
+		}
+	}
+}
