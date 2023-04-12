@@ -753,7 +753,7 @@ body {
 }
 @media (min-width: 1280px) {
   .header__menu .button {
-    margin: 0 0 0;
+    margin: 0;
     padding: 12px 0;
     width: 113px;
     font-weight: 600;
