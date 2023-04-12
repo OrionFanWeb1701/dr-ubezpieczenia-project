@@ -53,6 +53,17 @@ body {
 		}
 	}
 
+	&--logo {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 26px;
+
+		@include desktop {
+			font-size: 28px;
+			line-height: 32px;
+		}
+	}
+
 	&--small {
 		font-weight: 600;
 		font-size: 22px;
