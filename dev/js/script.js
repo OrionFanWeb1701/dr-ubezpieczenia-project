@@ -5,7 +5,7 @@ const loadElement = () => {
 	const sections = document.querySelectorAll('section');
 	const footer = document.querySelector('.footer');
 
-	document.addEventListener('DOMContentLoaded', () => {
+	window.addEventListener('DOMContentLoaded', () => {
 		loader.classList.add('hiddenElement');
 
 		sections.forEach((section) => {
