@@ -1,22 +1,18 @@
 /* Script loader */
 
 const loadElement = () => {
-	const sectionHeading = document.querySelector('.section-heading');
+	const loader = document.querySelector('.loader');
 	const sections = document.querySelectorAll('section');
 	const footer = document.querySelector('.footer');
 
-	const loader = document.querySelector('.loader');
-
 	document.addEventListener('DOMContentLoaded', () => {
-		loader.style.display = 'none';
-
-		sectionHeading.style.display = 'block';
+		loader.classList.add('hiddenElement');
 
 		sections.forEach((section) => {
-			section.style.display = 'block';
+			section.classList.remove('hiddenElement');
 		});
 
-		footer.style.display = 'block';
+		footer.classList.remove('hiddenElement');
 	});
 };
 

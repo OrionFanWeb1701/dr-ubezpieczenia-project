@@ -6,6 +6,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+.hiddenElement {
+	display: none;
+}
+
 .container {
 	position: relative;
 	margin: 0 auto;
@@ -19,7 +23,6 @@ html {
 }
 
 .section {
-	display: none;
 	padding: 40px 0;
 
 	@include tablet {

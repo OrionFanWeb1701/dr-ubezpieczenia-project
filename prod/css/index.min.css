@@ -1732,6 +1732,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.hiddenElement {
+  display: none;
+}
+
 .container {
   position: relative;
   margin: 0 auto;
@@ -1746,7 +1750,6 @@ html {
 }
 
 .section {
-  display: none;
   padding: 40px 0;
 }
 @media (min-width: 768px) {
@@ -1776,7 +1779,6 @@ html {
 
 /* Section of heading */
 .section-heading {
-  display: none;
   width: 100%;
   background-image: url("../../dev/img/bg-banner-small.jpg");
   background-repeat: no-repeat;
@@ -1939,7 +1941,6 @@ html {
 
 /* Footer */
 .footer {
-  display: none;
   padding: 32px 0;
 }
 @media (min-width: 1280px) {
