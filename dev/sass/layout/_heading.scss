@@ -3,19 +3,21 @@
 /* Section of heading */
 
 .section-heading {
+	display: none;
 	width: 100%;
-	height: 100vh;
 	background-image: url('../../dev/img/bg-banner-small.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 
 	@include mobile-landscape {
+		height: 100vh;
 		background-image: url('../../dev/img/bg-banner-large.jpg');
 		background-position: left;
 	}
 
 	@include tablet {
+		height: 100vh;
 		background-image: url('../../dev/img/bg-banner-large.jpg');
 		background-position: 60%;
 	}
@@ -72,6 +74,20 @@
 
 			@include desktop {
 				padding-bottom: 64px;
+			}
+		}
+
+		.btn-box {
+			.button:nth-child(2) {
+				margin-bottom: 72px;
+
+				@include mobile-landscape {
+					margin-bottom: 0;
+				}
+
+				@include tablet {
+					margin-bottom: 24px;
+				}
 			}
 		}
 	}

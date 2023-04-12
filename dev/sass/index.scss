@@ -5,10 +5,11 @@
 @forward './base/colors';
 @forward './base/animation';
 
+@forward './components/loader';
 @forward './components/buttons';
-@forward './components/swiper';
+@forward './components/partners-swiper';
+@forward './components/opinion-swiper';
 
-@forward './layout/partners';
 @forward './layout/change-box';
 @forward './layout/needs';
 @forward './layout/meter';

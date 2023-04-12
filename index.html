@@ -12,6 +12,10 @@
 
 <body>
 
+    <div class="loader">
+        <div class="lds-dual-ring"></div>
+    </div>
+
     <!-- Section of heading -->
 
     <section class="section-heading">
@@ -39,42 +43,152 @@
                     <p class="section-text section-text--social color-heading-text">Więcej</p>
                 </a>
 
-                <div class="section-heading__social">
-                    <a href="#" class="section-text section-text--social color-heading-text">Linkedin</a>
-                    <a href="#" class="section-text section-text--social color-heading-text">Facebook</a>
-                </div>
-
             </div>
         </div>
+
+        <div class="section-heading__social">
+            <a href="#" class="section-text section-text--social color-heading-text">Linkedin</a>
+            <a href="#" class="section-text section-text--social color-heading-text">Facebook</a>
+        </div>
+
     </section>
 
     <!-- Section of partners -->
 
-    <section class="section section-partners" id="section-partners">
+    <section class="section section--partners" id="section-partners">
         <div class="container">
 
             <h3 class="section-subtitle section-subtitle--partners color-text-dark">Partnerzy</h3>
 
-            <div class="partners-box">
-                <div class="partners-box__element">
-                    <img src="./dev/img/ergo-logo.svg" alt="icon" class="img slider-partners__icon">
+            <!-- Mobile swiper -->
+
+            <div class="partners-mobile-swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <div class="partners-box-mobile">
+                            <img src="./dev/img/ergo-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                        <div class="partners-box-mobile">
+                            <img src="./dev/img/compensa-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                        <div class="partners-box-mobile">
+                            <img src="./dev/img/allianz-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                        <div class="partners-box-mobile">
+                            <img src="./dev/img/uniqa-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="partners-box-mobile">
+                            <img src="./dev/img/nederland-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                        <div class="partners-box-mobile">
+                            <img src="./dev/img/ergo-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                        <div class="partners-box-mobile">
+                            <img src="./dev/img/compensa-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                        <div class="partners-box-mobile">
+                            <img src="./dev/img/allianz-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="partners-box__element">
-                    <img src="./dev/img/allianz-logo.svg" alt="icon" class="img slider-partners__icon">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <!-- Desktop Swiper -->
+
+            <div class="partners-desktop-swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <div class="partners-box-desktop">
+                            <img src="./dev/img/ergo-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="partners-box-desktop">
+                            <img src="./dev/img/allianz-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="partners-box-desktop">
+                            <img src="./dev/img/compensa-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="partners-box-desktop">
+                            <img src="./dev/img/uniqa-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="partners-box-desktop">
+                            <img src="./dev/img/nederland-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="partners-box-desktop">
+                            <img src="./dev/img/ergo-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="partners-box-desktop">
+                            <img src="./dev/img/allianz-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="partners-box-desktop">
+                            <img src="./dev/img/compensa-logo.svg" alt="icon" class="img slider-partners__icon">
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="partners-box__element">
-                    <img src="./dev/img/compensa-logo.svg" alt="icon" class="img slider-partners__icon">
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
-                <div class="partners-box__element">
-                    <img src="./dev/img/uniqa-logo.svg" alt="icon" class="img slider-partners__icon">
-                </div>
-
-                <div class="partners-box__element">
-                    <img src="./dev/img/nederland-logo.svg" alt="icon" class="img slider-partners__icon">
-                </div>
             </div>
 
         </div>
@@ -88,8 +202,8 @@
             <h2 class="small-heading color-text-blue">oferta</h2>
 
             <div class="section__description">
-                <h3 class="section-title color-text-dark">Oferujemy 4 różne typy <span
-                        class="section-title--designation"><span>ubezpieczenia</span></span></h3>
+                <h3 class="section-title color-text-dark">Oferujemy 4 różne typy <strong
+                        class="underline">ubezpieczenia</strong></h3>
                 <p class="section-text color-text-dusky">Suspendisse ornare felis in tortor fringilla, id iaculis felis
                 </p>
             </div>
@@ -396,8 +510,9 @@
 
             <div class="section__description">
                 <h3 class="section-title color-text-dark">To bardzo proste</h3>
-                <p class="section-text color-text-dusky">Wbrew pozorom, przez internet załatwimy to w <span
-                        class="section-title--designation"><span>5 minut</span></span></p>
+                <p class="section-text color-text-dusky">Wbrew pozorom, przez internet załatwimy to w <strong
+                        class="underline">5
+                        minut</strong></p>
             </div>
 
             <div class="how-work">
@@ -594,8 +709,8 @@
                             <div class="section-contact-other__img">
                                 <img src="./dev/img/message.svg" alt="message">
                             </div>
-                            <a class="section-contact-other__link section-text section-text--contact color-text-dark">
-                                dawid.romanowski<span>@ovb.pl</span></a>
+                            <a href="mailto:dawid.romanowski@ovb.pl"
+                                class="section-contact-other__link section-text section-text--contact color-text-dark">dawid.romanowski<span>@ovb.pl</span></a>
                         </div>
 
                         <div class="section-contact-other__box">
@@ -615,7 +730,7 @@
                     </h3>
 
                     <div class="section-contact-form__box">
-                        Miejsce na formularz Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex suscipit
+                        <b>Miejsce na formularz</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex suscipit
                         maiores porro, minus excepturi repellat alias magnam iure doloremque doloribus eum quia eligendi
                         similique tempora exercitationem incidunt pariatur quisquam? Ea adipisci placeat eligendi
                         perspiciatis aliquam reiciendis! Pariatur quas alias nemo nostrum cumque itaque saepe, cum
@@ -665,13 +780,13 @@
             </div>
             <div class="footer__social">
                 <div class="footer__element">
-                    <img src="./dev/img/linkedin-logo.svg" alt="linkedin logo">
+                    <img class="img footer__img" src="./dev/img/linkedin-logo.svg" alt="linkedin logo">
                 </div>
                 <div class="footer__element">
-                    <img src="./dev/img/facebook-logo.svg" alt="facebook logo">
+                    <img class="img footer__img" src="./dev/img/facebook-logo.svg" alt="facebook logo">
                 </div>
                 <div class="footer__element">
-                    <img src="./dev/img/instagram-logo.svg" alt="instagram logo">
+                    <img class="img footer__img" src="./dev/img/instagram-logo.svg" alt="instagram logo">
                 </div>
             </div>
             <div class="footer__links">
@@ -683,10 +798,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./libs/swiperSettings.js"></script>
+    <script src="./libs/partnersSwiperSettings.js"></script>
+    <script src="./libs/opinionSwiperSettings.js"></script>
 
     <script type="module" src="./dev/js/components/changeBox.js"></script>
-    <!-- <script type="module" src="./dev/js/script.js"></script> -->
+    <script type="module" src="./dev/js/script.js"></script>
 
 </body>
 

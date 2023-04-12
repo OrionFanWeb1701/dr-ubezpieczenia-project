@@ -3,6 +3,7 @@
 /* Footer */
 
 .footer {
+	display: none;
 	padding: 32px 0;
 
 	@include desktop {
@@ -63,6 +64,14 @@
 
 		&:nth-child(2) {
 			margin: 0 16px;
+		}
+
+		&__img {
+			transition: filter 0.3s;
+		}
+
+		&:hover > .footer__img {
+			filter: invert(1);
 		}
 	}
 

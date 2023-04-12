@@ -5,12 +5,11 @@
 .section-how-work {
 	.section__description {
 		.section-text {
-			.section-title--designation {
-				span {
-					font-weight: 600;
-					color: var(--color-black);
-				}
-				span::after {
+			.underline {
+				font-weight: 600;
+				color: var(--color-black);
+
+				&::after {
 					bottom: 0;
 					height: 8px;
 				}
