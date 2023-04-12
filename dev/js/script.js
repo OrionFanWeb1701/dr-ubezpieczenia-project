@@ -1,19 +1,15 @@
 /* Script loader */
 
-const loadElement = () => {
+window.addEventListener('DOMContentLoaded', () => {
 	const loader = document.querySelector('.loader');
 	const sections = document.querySelectorAll('section');
 	const footer = document.querySelector('.footer');
 
-	window.addEventListener('DOMContentLoaded', () => {
-		loader.classList.add('hiddenElement');
+	loader.classList.add('hiddenElement');
 
-		sections.forEach((section) => {
-			section.classList.remove('hiddenElement');
-		});
-
-		footer.classList.remove('hiddenElement');
+	sections.forEach((section) => {
+		section.classList.remove('hiddenElement');
 	});
-};
 
-loadElement();
+	footer.classList.remove('hiddenElement');
+});
