@@ -1,6 +1,6 @@
 /* Script loader */
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
 	const loader = document.querySelector('.loader');
 	const sections = document.querySelectorAll('section');
 	const footer = document.querySelector('.footer');
