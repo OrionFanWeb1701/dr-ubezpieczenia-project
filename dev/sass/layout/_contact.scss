@@ -2,6 +2,8 @@
 
 /* Section contact */
 .section-contact {
+	padding-bottom: 16px !important;
+
 	.small-heading {
 		@include desktop {
 			text-align: left;
@@ -84,7 +86,14 @@
 	&__box {
 		display: flex;
 		background-color: var(--color-white);
+		border: 1px solid var(--color-white);
 		border-radius: var(--border-radius-box);
+		transition: all 0.3s;
+
+		&:hover {
+			border: 1px solid #14b8a6;
+			background-color: #14b8a61a;
+		}
 
 		@include mobile-landscape {
 			flex-direction: column;
@@ -157,7 +166,7 @@
 	}
 
 	&__box {
-		padding-top: 50px;
+		padding-top: 24px;
 
 		@include desktop {
 			padding-right: 116px;

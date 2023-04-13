@@ -1,0 +1,93 @@
+@use '../base/variables' as *;
+
+/* Form */
+
+form {
+	.button {
+		margin-top: 24px;
+	}
+}
+
+.form-dates {
+	display: flex;
+
+	select {
+		width: 92px;
+	}
+}
+
+input,
+textarea,
+select {
+	padding: 14px 16px;
+	width: 100%;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: -0.025em;
+	border-radius: var(--border-radius-slider) !important;
+	border: none;
+}
+
+input,
+select {
+	margin: 8px 0 16px;
+	height: 48px;
+}
+
+select {
+	background-color: var(--color-white);
+}
+
+textarea {
+	margin: 8px 0 24px;
+	resize: vertical;
+}
+
+label {
+	display: inline-block;
+	width: 100%;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+span {
+	label {
+		display: flex;
+	}
+}
+
+input[type='checkbox'] {
+	margin: 0 16px 0 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #22222280;
+}
+
+.wpcf7-list-item-label {
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: -0.025em;
+	color: var(--color-dark);
+
+	a {
+		color: var(--color-blue);
+		font-weight: 600;
+	}
+}
+
+.wpcf7-form-control-wrap {
+	width: 30%;
+
+	select {
+		width: 100%;
+	}
+
+	&:last-child {
+		width: 40%;
+	}
+}

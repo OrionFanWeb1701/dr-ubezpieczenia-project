@@ -71,8 +71,15 @@
 	&__card {
 		padding: 0 24px;
 		background-color: var(--color-white);
+		border: 1px solid var(--color-white);
 		border-radius: var(--border-radius-box);
 		text-align: center;
+		transition: all 0.3s;
+
+		&:hover {
+			border: 1px solid rgba(37, 99, 235, 1);
+			background-color: rgba(37, 99, 235, 0.1);
+		}
 	}
 
 	&__icon {
@@ -93,12 +100,27 @@
 		}
 
 		.section-text--ask {
+			position: relative;
 			display: block;
 			margin-bottom: 32px;
-			transition: color 0.3s;
+			transition: all 0.3s;
 
 			&:hover {
-				color: darken(#e14343, 10%);
+				color: rgba(37, 99, 235, 1);
+				transform: translateX(-16px);
+			}
+
+			.img {
+				position: absolute;
+				top: calc(50% - 7px);
+				left: calc(50% - 7px);
+				transition: all 0.3s;
+				opacity: 0;
+			}
+
+			&:hover > .img {
+				transform: translateX(50px);
+				opacity: 1;
 			}
 		}
 	}

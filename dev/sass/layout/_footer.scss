@@ -49,28 +49,12 @@
 		transition: background-color 0.3s;
 		cursor: pointer;
 
-		&:nth-child(1):hover {
-			background-color: #0e76a8;
-		}
-
-		&:nth-child(2):hover {
-			background-color: #4267b2;
-		}
-
-		&:nth-child(3):hover {
-			background-color: #833ab4;
+		&:hover {
+			background-color: rgba(229, 229, 229, 1);
 		}
 
 		&:nth-child(2) {
 			margin: 0 16px;
-		}
-
-		&__img {
-			transition: filter 0.3s;
-		}
-
-		&:hover > .footer__img {
-			filter: invert(1);
 		}
 	}
 

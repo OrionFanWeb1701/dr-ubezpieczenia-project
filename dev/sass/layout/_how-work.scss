@@ -34,13 +34,20 @@
 			@include desktop {
 				margin-right: 0;
 			}
+
+			&--blue {
+				&:hover {
+					background-color: var(--color-blue-hover-dark);
+				}
+			}
 		}
 
 		.button--message {
 			margin-bottom: 0;
 
 			&:hover {
-				background-color: var(--color-white);
+				background-color: var(--color-dark);
+				color: var(--color-white);
 			}
 		}
 	}
