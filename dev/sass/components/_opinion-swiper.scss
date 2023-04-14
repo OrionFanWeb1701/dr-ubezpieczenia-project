@@ -9,6 +9,10 @@
 		overflow: visible !important;
 	}
 
+	@include bigDesktop {
+		width: 538px;
+	}
+
 	.swiper-wrapper {
 		padding-bottom: 80px !important;
 	}

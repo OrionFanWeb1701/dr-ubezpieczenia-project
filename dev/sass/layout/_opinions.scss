@@ -8,6 +8,10 @@
 			display: grid;
 			grid-template-columns: 42% 58%;
 		}
+
+		@include bigDesktop {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	.btn-box {
@@ -27,6 +31,10 @@
 }
 
 .opinion-box {
+	@include bigDesktop {
+		margin-left: 142px;
+	}
+
 	.small-heading {
 		@include desktop {
 			text-align: left;

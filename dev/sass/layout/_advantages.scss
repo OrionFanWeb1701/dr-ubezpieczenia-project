@@ -52,6 +52,12 @@
 			padding-top: 0;
 		}
 
+		@include bigDesktop {
+			position: relative;
+			left: 142px;
+			align-items: center;
+		}
+
 		.img {
 			border-radius: var(--border-radius-box);
 
@@ -106,7 +112,7 @@
 		}
 
 		.section-subtitle {
-			padding-left: 16px;
+			padding: 4px 0 0 16px;
 		}
 	}
 

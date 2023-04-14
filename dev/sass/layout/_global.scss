@@ -20,10 +20,14 @@ html {
 	margin: 0 auto;
 	padding: 0 24px;
 	width: 100%;
-	max-width: 1366px;
+	max-width: 1920px;
 
 	@include desktop {
 		padding: 0 64px;
+	}
+
+	@include bigDesktop {
+		padding: 0 128px;
 	}
 }
 

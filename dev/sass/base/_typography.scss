@@ -39,6 +39,11 @@ body {
 		line-height: 64px;
 	}
 
+	@include bigDesktop {
+		font-size: 56px;
+		line-height: 75px;
+	}
+
 	span {
 		content: '\A';
 		display: block;
@@ -94,6 +99,10 @@ body {
 	@include tablet {
 		text-align: center;
 		font-size: 14px;
+		line-height: 16px;
+	}
+
+	@include bigDesktop {
 		line-height: 16px;
 	}
 }

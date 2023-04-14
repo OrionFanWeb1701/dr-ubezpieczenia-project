@@ -91,6 +91,10 @@
 	.swiper-button-prev {
 		margin-left: 1200px;
 
+		@include bigDesktop {
+			margin-left: 1690px;
+		}
+
 		&::after {
 			content: url('../../dev/img/arrow-left.svg');
 		}
@@ -98,6 +102,10 @@
 
 	.swiper-button-next {
 		margin-right: 64px;
+
+		@include bigDesktop {
+			margin-right: 128px;
+		}
 
 		&::after {
 			content: url('../../dev/img/arrow-right.svg');

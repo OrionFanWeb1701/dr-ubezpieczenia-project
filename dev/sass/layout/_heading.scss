@@ -107,6 +107,12 @@
 			transform: translateX(0);
 		}
 
+		@include bigDesktop {
+			left: 128px;
+			bottom: 64px;
+			transform: translateX(0);
+		}
+
 		.shake-vertical {
 			animation: shake-vertical 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
 
@@ -143,6 +149,10 @@
 			.section-text:nth-child(1) {
 				margin-bottom: 96px;
 			}
+		}
+
+		@include bigDesktop {
+			right: 100px;
 		}
 	}
 }

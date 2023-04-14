@@ -63,3 +63,9 @@
 		@content;
 	}
 }
+
+@mixin bigDesktop {
+	@media (min-width: 1920px) {
+		@content;
+	}
+}
