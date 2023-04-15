@@ -21,6 +21,10 @@
 		background-position: 60%;
 	}
 
+	@include desktop {
+		background-position: center;
+	}
+
 	.container {
 		height: 100%;
 

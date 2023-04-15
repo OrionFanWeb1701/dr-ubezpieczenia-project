@@ -1,9 +1,7 @@
 @use '../base/variables' as *;
 
 /* Section contact */
-.section-contact {
-	padding-bottom: 16px !important;
-
+.section--contact {
 	.small-heading {
 		@include desktop {
 			text-align: left;
@@ -99,8 +97,8 @@
 		transition: all 0.3s;
 
 		&:hover {
-			border: 1px solid #14b8a6;
-			background-color: #14b8a61a;
+			border: 1px solid var(--color-green);
+			background-color: var(--color-green-opacity);
 		}
 
 		@include mobile-landscape {
@@ -173,6 +171,7 @@
 
 	@include bigDesktop {
 		width: 1050px;
+		padding-bottom: 84px;
 	}
 
 	.section-subtitle {
@@ -188,8 +187,6 @@
 	}
 
 	&__box {
-		// padding-top: 24px;
-
 		@include desktop {
 			padding-right: 116px;
 			border-right: 1px solid #dddddd;

@@ -50,7 +50,7 @@
 		cursor: pointer;
 
 		&:hover {
-			background-color: rgba(229, 229, 229, 1);
+			background-color: var(--color-backgroud-social-hover);
 		}
 
 		&:nth-child(2) {

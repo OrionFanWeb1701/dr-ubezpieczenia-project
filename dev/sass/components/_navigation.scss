@@ -46,22 +46,21 @@
 	&__menu {
 		display: none;
 		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
+		justify-content: flex-start;
+		align-items: flex-start;
 		position: absolute;
 		top: 48px;
 		right: 0;
 		padding: 0 24px;
-		width: 70%;
-		height: calc(100vh - 48px);
-		background-color: var(--color-blue);
-		border-top-left-radius: var(--border-radius-box);
-		box-shadow: -4px -4px 7px -3px rgba(24, 24, 27, 1);
+		width: 100%;
+		height: calc(100vh - (48px + 64px));
+		background-color: var(--color-white);
 
 		@include desktop {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
+			align-items: center;
 			position: static;
 			padding: 0;
 			width: 580px;
@@ -72,21 +71,26 @@
 		}
 
 		.button {
-			padding: 0;
+			padding: 12px 0;
 			font-weight: 500;
+			margin-bottom: 0;
+			text-align: left;
 
 			@include desktop {
 				margin: 0;
-				padding: 12px 0;
 				width: 113px;
 				font-weight: 600;
+				text-align: center;
+				color: var(--color-white);
+				background-color: var(--color-blue);
+				opacity: 1;
 			}
 
 			&:hover {
 				background-color: transparent;
 
 				@include desktop {
-					background-color: darken(#3b82f6, 10%);
+					background-color: var(--color-blue-hover);
 				}
 			}
 		}
@@ -116,14 +120,19 @@
 }
 
 .menu-item {
+	padding: 12px 0;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: -0.025em;
-	color: var(--color-white);
+	color: var(--color-dark);
+	opacity: 0.7;
 	transition: color 0.3s;
 
 	@include desktop {
+		padding: 0;
+		opacity: 1;
+
 		&:not(:last-child) {
 			color: var(--color-heading-text);
 		}

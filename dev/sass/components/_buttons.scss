@@ -108,11 +108,11 @@
 
 /* Class to change box buttons */
 
-.active {
+.btn-change:hover {
 	background-color: var(--color-white);
-	color: var(--color-blue);
 }
 
-.btn-change:hover {
+.active {
+	background-color: var(--color-white);
 	color: var(--color-blue);
 }

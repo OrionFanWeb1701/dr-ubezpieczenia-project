@@ -1,6 +1,6 @@
 @use '../base/variables' as *;
 
-/* Change box */
+/* Offers change box */
 
 .offers-change-box {
 	padding: 32px 0 24px;
@@ -43,12 +43,6 @@
 			&:active {
 				border: none;
 			}
-
-			&--white {
-				&:hover {
-					background-color: var(--color-white);
-				}
-			}
 		}
 	}
 
@@ -87,12 +81,12 @@
 		}
 
 		&:hover {
-			border: 2px solid rgba(37, 99, 235, 1);
-			background-color: rgba(37, 99, 235, 0.1);
+			border: 2px solid var(--color-blue-hover-dark);
+			background-color: var(--color-blue-hover-dark-opacity);
 		}
 
 		&:hover > .offers-change-box__description > .section-text--ask {
-			color: rgba(37, 99, 235, 1);
+			color: var(--color-blue-hover-dark);
 			transform: translateX(-16px);
 		}
 

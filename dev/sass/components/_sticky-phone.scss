@@ -1,0 +1,52 @@
+@use '../base/variables' as *;
+
+/* Sticky phone */
+
+.show-phone {
+	animation: showStickyPhone 0.3s forwards;
+}
+
+.hidden-phone {
+	animation: hiddenStickyPhone 0.3s forwards;
+}
+
+.sticky-phone {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 64px;
+	transform: translateY(64px);
+	background-color: var(--color-white);
+	z-index: 100;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.img {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 8px;
+	}
+
+	.button {
+		position: relative;
+		display: block;
+		width: 100%;
+		margin-bottom: 0;
+		padding: 12px 0;
+
+		&:hover {
+			background-color: var(--color-blue-hover-dark);
+		}
+	}
+
+	@include tablet {
+		display: none;
+	}
+}
