@@ -49,14 +49,14 @@
 	}
 
 	@include desktop {
-		width: 206px;
-		padding: 16px 0;
+		width: max-content;
+		padding: 16px 32px;
 		margin-right: 16px;
 	}
 
 	&--message {
 		@include desktop {
-			width: 164px;
+			width: max-content;
 		}
 	}
 

@@ -37,6 +37,7 @@
     "gulp-uglify": "^3.0.2",
     "postcss": "^8.4.5",
     "sass": "^1.45.1",
+    "swiper": "^9.2.2",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

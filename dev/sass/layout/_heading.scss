@@ -58,10 +58,18 @@
 
 		.small-heading {
 			text-align: left;
+
+			@include mobile-landscape {
+				display: none;
+			}
 		}
 
 		.heading {
 			padding: 8px 0 16px;
+
+			@include mobile-landscape {
+				margin-bottom: 32px;
+			}
 
 			@include desktop {
 				padding: 16px 0 24px;
@@ -70,6 +78,10 @@
 
 		.heading-text {
 			padding-bottom: 32px;
+
+			@include mobile-landscape {
+				display: none;
+			}
 
 			@include tablet {
 				padding-bottom: 120px;
