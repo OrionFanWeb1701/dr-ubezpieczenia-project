@@ -336,17 +336,6 @@ body {
   background-color: var(--color-yellow);
   z-index: -1;
 }
-.section-title--meter {
-  font-size: 32px;
-  line-height: 43px;
-}
-@media (min-width: 768px) {
-  .section-title {
-    text-align: center;
-    font-size: 40px;
-    line-height: 53px;
-  }
-}
 
 .section-subtitle {
   font-family: "Playfair Display", serif;
@@ -358,12 +347,12 @@ body {
   font-size: 24px;
   line-height: 32px;
 }
-.section-subtitle--advantages {
+.section-subtitle--small {
   font-size: 18px;
   line-height: 24px;
 }
 @media (min-width: 1280px) {
-  .section-subtitle--advantages {
+  .section-subtitle--small {
     font-size: 20px;
     line-height: 28px;
   }
@@ -529,10 +518,6 @@ body {
 
 .color-heading-text {
   color: var(--color-heading-text);
-}
-
-.color-meter {
-  color: var(--color-meter);
 }
 
 /* Colors of backgrounds */
@@ -709,8 +694,6 @@ body {
 .header--sticky {
   position: fixed;
   background-color: var(--color-dark);
-  -webkit-box-shadow: 0px 1px 4px -2px var(--color-white);
-          box-shadow: 0px 1px 4px -2px var(--color-white);
 }
 .header__nav .container {
   display: -webkit-box;
@@ -1638,6 +1621,21 @@ input[type=checkbox] {
 .meter-content .section-text {
   text-align: center;
 }
+.meter-content .section-title {
+  padding: 0 0 16px !important;
+  font-size: 32px;
+  line-height: 43px;
+  color: var(--color-white);
+}
+@media (min-width: 768px) {
+  .meter-content .section-title {
+    font-size: 40px;
+    line-height: 53px;
+  }
+}
+.meter-content .section-text {
+  color: var(--color-meter);
+}
 
 /* Advantages */
 .color-section-blue .container {
@@ -1674,6 +1672,7 @@ input[type=checkbox] {
 @media (min-width: 1280px) {
   .color-section-blue .section__description .section-title {
     width: 80%;
+    text-align: left;
   }
 }
 .color-section-blue .section__img {
@@ -2365,6 +2364,14 @@ html {
     padding: 40px 0;
   }
 }
+.section--meter {
+  padding: 48px 0;
+}
+@media (min-width: 768px) {
+  .section--meter {
+    padding: 49px 0 64px;
+  }
+}
 .section--contact {
   padding-bottom: 16px;
 }
@@ -2378,11 +2385,9 @@ html {
 }
 @media (min-width: 768px) {
   .section .section-title {
+    text-align: center;
     padding: 16px 0 24px;
   }
-}
-.section .section-title--meter {
-  padding: 0 0 16px;
 }
 
 /* Section of heading */
@@ -2682,6 +2687,9 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-column-gap: 32px;
        -moz-column-gap: 32px;
             column-gap: 32px;

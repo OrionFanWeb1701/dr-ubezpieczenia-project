@@ -129,17 +129,6 @@ body {
 			z-index: -1;
 		}
 	}
-
-	&--meter {
-		font-size: 32px;
-		line-height: 43px;
-	}
-
-	@include tablet {
-		text-align: center;
-		font-size: 40px;
-		line-height: 53px;
-	}
 }
 
 .section-subtitle {
@@ -153,7 +142,7 @@ body {
 		line-height: 32px;
 	}
 
-	&--advantages {
+	&--small {
 		font-size: 18px;
 		line-height: 24px;
 

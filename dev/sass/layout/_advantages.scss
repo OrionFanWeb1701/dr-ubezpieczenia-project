@@ -38,6 +38,7 @@
 		.section-title {
 			@include desktop {
 				width: 80%;
+				text-align: left;
 			}
 		}
 	}
