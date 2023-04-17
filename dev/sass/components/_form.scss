@@ -58,7 +58,6 @@ form {
 input,
 textarea,
 select {
-	padding: 14px 16px;
 	width: 100%;
 	font-family: inherit;
 	font-weight: 400;
@@ -66,7 +65,20 @@ select {
 	line-height: 20px;
 	letter-spacing: -0.025em;
 	border-radius: var(--border-radius-slider) !important;
-	border: none;
+	border: 2px solid var(--color-white);
+
+	&:hover {
+		box-shadow: 0px 2px 0px #18181b0d, 0px 1px 0px #18181b1a;
+	}
+
+	&:focus {
+		border: 2px solid var(--color-blue);
+	}
+}
+
+input,
+textarea {
+	padding: 14px 16px;
 }
 
 input,
@@ -76,6 +88,7 @@ select {
 }
 
 select {
+	padding: 0 16px;
 	background-color: var(--color-white);
 	color: var(--color-gray-medium);
 }
@@ -150,6 +163,11 @@ input[type='checkbox'] {
 	width: 20px;
 	height: 20px;
 	border: 1px solid var(--color-black-form-border);
+
+	&:hover {
+		border: 1px solid var(--color-black);
+		box-shadow: none;
+	}
 }
 
 .wpcf7-list-item-label {
