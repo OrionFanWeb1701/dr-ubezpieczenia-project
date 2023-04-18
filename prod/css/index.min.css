@@ -2489,7 +2489,8 @@ html {
 }
 @media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading__box .heading {
-    margin-bottom: 32px;
+    font-size: 36px;
+    margin-bottom: 28px;
   }
 }
 @media (min-width: 1280px) {
