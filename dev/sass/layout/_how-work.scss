@@ -111,9 +111,24 @@
 	}
 
 	&__number {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		position: absolute;
 		right: -12px;
 		bottom: -8px;
+		width: 24px;
+		height: 24px;
+		color: var(--color-white);
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 16px;
+		background-color: var(--color-dark);
+		border-radius: 12px;
+
+		&--green {
+			background-color: var(--color-green);
+		}
 	}
 
 	&__description {
