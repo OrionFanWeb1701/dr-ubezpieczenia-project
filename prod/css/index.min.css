@@ -235,7 +235,7 @@ body {
     line-height: 75px;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .heading br {
     display: none;
   }
@@ -860,7 +860,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .btn-box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -896,14 +896,9 @@ body {
 .button:active {
   border: 1px solid var(--color-white);
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .button:first-child {
     margin-right: 16px;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  .button {
-    margin-bottom: 0;
   }
 }
 @media (min-width: 768px) {
@@ -1613,7 +1608,7 @@ input[type=checkbox]:hover {
           flex-direction: column;
   row-gap: 40px;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .meter-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2104,7 +2099,7 @@ input[type=checkbox]:hover {
   display: block;
   white-space: pre;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section--contact .section__description .section-title span {
     display: inline;
   }
@@ -2146,7 +2141,7 @@ input[type=checkbox]:hover {
   gap: 16px;
   padding: 40px 0;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-contact-other__boxes {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2210,7 +2205,7 @@ input[type=checkbox]:hover {
   border: 1px solid var(--color-green);
   background-color: var(--color-green-opacity);
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-contact-other__box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2238,7 +2233,7 @@ input[type=checkbox]:hover {
 .section-contact-other__img {
   padding: 8px 16px;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-contact-other__img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2287,7 +2282,7 @@ input[type=checkbox]:hover {
     display: inline;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-contact-other__link {
     padding: 20px 0;
   }
@@ -2419,7 +2414,7 @@ html {
   background-position: center;
   background-size: cover;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading {
     height: 100vh;
     background-image: url("../../dev/img/bg-banner-large.jpg");
@@ -2441,7 +2436,7 @@ html {
 .section-heading .container {
   height: 100%;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2464,7 +2459,7 @@ html {
 .section-heading__box {
   padding-top: 151px;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading__box {
     padding-top: 0;
     width: 70%;
@@ -2484,7 +2479,7 @@ html {
 .section-heading__box .small-heading {
   text-align: left;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading__box .small-heading {
     display: none;
   }
@@ -2492,7 +2487,7 @@ html {
 .section-heading__box .heading {
   padding: 8px 0 16px;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading__box .heading {
     margin-bottom: 32px;
   }
@@ -2505,7 +2500,7 @@ html {
 .section-heading__box .heading-text {
   padding-bottom: 32px;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading__box .heading-text {
     display: none;
   }
@@ -2523,7 +2518,7 @@ html {
 .section-heading__box .btn-box .button:nth-child(2) {
   margin-bottom: 72px;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading__box .btn-box .button:nth-child(2) {
     margin-bottom: 0;
   }
@@ -2540,7 +2535,7 @@ html {
           transform: translateX(-50%);
   bottom: 29px;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading__more {
     bottom: 15px;
   }
@@ -2565,7 +2560,7 @@ html {
   -webkit-animation: shake-vertical 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
           animation: shake-vertical 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
 }
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading__more .shake-vertical {
     width: 10px;
   }
