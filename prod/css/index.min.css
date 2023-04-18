@@ -901,6 +901,11 @@ body {
     margin-right: 16px;
   }
 }
+@media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
+  .button {
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 768px) {
   .button {
     width: 70%;
@@ -2489,7 +2494,7 @@ html {
 }
 @media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading__box .heading {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 28px;
   }
 }

@@ -40,6 +40,10 @@
 		}
 	}
 
+	@include mobile-landscape {
+		margin-bottom: 0;
+	}
+
 	@include tablet {
 		width: 70%;
 	}
