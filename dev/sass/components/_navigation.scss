@@ -3,7 +3,7 @@
 /* Navigation */
 
 .header {
-	position: absolute;
+	position: fixed;
 	padding: 16px 0;
 	width: 100%;
 	height: 64px;
@@ -11,21 +11,18 @@
 	z-index: 100;
 
 	@include desktop {
-		padding-top: 8px;
+		padding: 28px 0;
 		height: 104px;
 	}
 
 	&--sticky {
-		position: fixed;
 		background-color: var(--color-dark);
 	}
 
-	&__nav {
-		.container {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
+	&__panel {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	&__logo {
@@ -42,31 +39,83 @@
 		}
 	}
 
-	&__menu {
+	&__burger-box {
+		transition: filter 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			filter: invert(30%);
+		}
+
+		@include desktop {
+			display: none;
+		}
+	}
+
+	&__content {
 		display: none;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
 		position: absolute;
 		top: 48px;
-		right: 0;
+		left: 0;
 		padding: 0 24px;
 		width: 100%;
-		height: calc(100vh - (48px + 64px));
+		height: calc(100vh - 128px);
 		background-color: var(--color-white);
 
 		@include desktop {
 			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			top: 0;
+			left: auto;
+			right: 64px;
+			padding: 0;
+			height: 40px;
+			width: 580px;
+			background-color: transparent;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+
+		@include desktop {
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
-			position: static;
-			padding: 0;
-			width: 580px;
-			height: 88px;
-			background-color: transparent;
-			border-top-left-radius: none;
-			box-shadow: none;
+		}
+
+		.menu-item {
+			position: relative;
+			padding: 12px 0;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 24px;
+			letter-spacing: -0.025em;
+			color: var(--color-dark);
+			opacity: 0.7;
+			transition: color 0.3s;
+
+			@include desktop {
+				opacity: 1;
+				color: var(--color-heading-text);
+			}
+
+			&:hover {
+				@include desktop {
+					color: var(--color-white);
+				}
+			}
+
+			&:nth-child(1) {
+				@include desktop {
+					display: none;
+				}
+			}
 		}
 
 		.button {
@@ -95,22 +144,34 @@
 		}
 	}
 
-	&__burger-box {
-		transition: filter 0.3s;
-		cursor: pointer;
-
-		&:hover {
-			filter: invert(30%);
-		}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: calc(100vh - 416px);
 
 		@include desktop {
 			display: none;
+		}
+
+		.btn-box {
+			.button {
+				width: 100%;
+			}
+
+			.button:nth-child(1) {
+				margin-bottom: 16px;
+			}
+		}
+
+		.footer__social {
+			padding: 0;
 		}
 	}
 }
 
 .active-menu {
-	display: flex;
+	display: block;
 	animation: animationShowMenu 1s forwards;
 
 	@include desktop {
@@ -118,28 +179,149 @@
 	}
 }
 
-.menu-item {
-	padding: 12px 0;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 24px;
-	letter-spacing: -0.025em;
-	color: var(--color-dark);
-	opacity: 0.7;
-	transition: color 0.3s;
+// .header {
+// 	position: absolute;
+// 	padding: 16px 0;
+// 	width: 100%;
+// 	height: 64px;
+// 	background-color: transparent;
+// 	z-index: 100;
 
-	@include desktop {
-		padding: 0;
-		opacity: 1;
+// 	@include desktop {
+// 		padding-top: 8px;
+// 		height: 104px;
+// 	}
 
-		&:not(:last-child) {
-			color: var(--color-heading-text);
-		}
-	}
+// 	&--sticky {
+// 		position: fixed;
+// 		background-color: var(--color-dark);
+// 	}
 
-	&:hover:not(:last-child) {
-		@include desktop {
-			color: var(--color-white);
-		}
-	}
-}
+// 	&__nav {
+// 		.container {
+// 			display: flex;
+// 			justify-content: space-between;
+// 			align-items: center;
+// 		}
+// 	}
+
+// 	&__logo {
+// 		display: flex;
+// 		align-items: center;
+
+// 		.img {
+// 			padding-right: 8px;
+
+// 			@include desktop {
+// 				width: 40px;
+// 				height: 40px;
+// 			}
+// 		}
+// 	}
+
+// 	&__menu {
+// 		display: none;
+// 		flex-direction: column;
+// 		justify-content: flex-start;
+// 		align-items: flex-start;
+// 		position: absolute;
+// 		top: 48px;
+// 		right: 0;
+// 		padding: 0 24px;
+// 		width: 100%;
+// 		background-color: var(--color-white);
+
+// 		@include desktop {
+// 			display: flex;
+// 			flex-direction: row;
+// 			justify-content: space-between;
+// 			align-items: center;
+// 			position: static;
+// 			padding: 0;
+// 			width: 580px;
+// 			height: 88px;
+// 			background-color: transparent;
+// 			border-top-left-radius: none;
+// 			box-shadow: none;
+// 		}
+
+// 		.button {
+// 			padding: 12px 0;
+// 			font-weight: 500;
+// 			margin-bottom: 0;
+// 			text-align: left;
+
+// 			@include desktop {
+// 				margin: 0;
+// 				width: 113px;
+// 				font-weight: 600;
+// 				text-align: center;
+// 				color: var(--color-white);
+// 				background-color: var(--color-blue);
+// 				opacity: 1;
+// 			}
+
+// 			&:hover {
+// 				background-color: transparent;
+
+// 				@include desktop {
+// 					background-color: var(--color-blue-hover);
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	&__burger-box {
+// 		transition: filter 0.3s;
+// 		cursor: pointer;
+
+// 		&:hover {
+// 			filter: invert(30%);
+// 		}
+
+// 		@include desktop {
+// 			display: none;
+// 		}
+// 	}
+// }
+
+// .active-menu {
+// 	display: flex;
+// 	animation: animationShowMenu 1s forwards;
+
+// 	@include desktop {
+// 		animation: none;
+// 	}
+// }
+
+// .menu-item {
+// 	padding: 12px 0;
+// 	font-weight: 500;
+// 	font-size: 18px;
+// 	line-height: 24px;
+// 	letter-spacing: -0.025em;
+// 	color: var(--color-dark);
+// 	opacity: 0.7;
+// 	transition: color 0.3s;
+
+// 	&:nth-child(1) {
+// 		@include desktop {
+// 			display: none;
+// 		}
+// 	}
+
+// 	@include desktop {
+// 		padding: 0;
+// 		opacity: 1;
+
+// 		&:not(:last-child) {
+// 			color: var(--color-heading-text);
+// 		}
+// 	}
+
+// 	&:hover:not(:last-child) {
+// 		@include desktop {
+// 			color: var(--color-white);
+// 		}
+// 	}
+// }

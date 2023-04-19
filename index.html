@@ -18,13 +18,25 @@
         <nav class="header__nav">
             <div class="container">
 
-                <a href="http://ubezpieczenia.pl" class="header__logo">
-                    <img class="img" src="./dev/img/logo-dr.svg" alt="Logo">
-                    <p class="heading heading--logo color-text-white">- ubezpieczenia.pl</p>
-                </a>
+                <div class="header__panel">
+
+                    <a href="http://ubezpieczenia.pl" class="header__logo">
+                        <img class="img" src="./dev/img/logo-dr.svg" alt="Logo">
+                        <p class="heading heading--logo color-text-white">- ubezpieczenia.pl</p>
+                    </a>
+
+                    <div class="header__burger-box">
+                        <img src="./dev/img/burger-menu.svg" alt="burger-menu">
+                    </div>
+
+                </div>
 
                 <div class="header__content">
+
                     <ul id="main-menu" class="header__menu">
+                        <li id="menu-item-7"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a
+                                href="#start">Start</a></li>
                         <li id="menu-item-8"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a
                                 href="#oferta">Oferta</a></li>
@@ -44,27 +56,29 @@
                             <a href="#kontakt">Kontakt</a>
                         </li>
                     </ul>
-                </div>
 
-                <!-- <ul id="main-menu" class="header__menu">
-                    <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a
-                            href="#oferta">Oferta</a></li>
-                    <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a
-                            href="#jak-to-dziala">Jak to działa</a></li>
-                    <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
-                        <a href="#dlaczego-warto">Dlaczego warto</a>
-                    </li>
-                    <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11">
-                        <a href="#opinie">Opinie</a>
-                    </li>
-                    <li id="menu-item-12"
-                        class="button menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
-                        <a href="#kontakt">Kontakt</a>
-                    </li>
-                </ul> -->
+                    <div class="header__info">
 
-                <div class="header__burger-box">
-                    <img src="./dev/img/burger-menu.svg" alt="burger-menu">
+                        <div class="btn-box">
+                            <a href="tel:+48578413377" class="button button--blue color-text-white">+48 578 413 377</a>
+                            <a href="#kontakt"
+                                class="button button--white button--border-dark button--message btn-menu">Wiadomość</a>
+                        </div>
+
+                        <div class="footer__social">
+                            <div class="footer__element">
+                                <img class="img footer__img" src="./dev/img/linkedin-logo.svg" alt="linkedin logo">
+                            </div>
+                            <div class="footer__element">
+                                <img class="img footer__img" src="./dev/img/facebook-logo.svg" alt="facebook logo">
+                            </div>
+                            <div class="footer__element">
+                                <img class="img footer__img" src="./dev/img/instagram-logo.svg" alt="instagram logo">
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -73,7 +87,7 @@
 
     <!-- Section of heading -->
 
-    <section class="section-heading">
+    <section class="section-heading" id="start">
         <div class="container">
             <div class="section-heading__box">
                 <h2 class="small-heading color-text-yellow">agent ubezpieczeniowy</h2>
