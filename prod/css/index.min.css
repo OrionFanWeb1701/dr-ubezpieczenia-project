@@ -2537,10 +2537,20 @@ html {
     padding-bottom: 64px;
   }
 }
+@media (min-width: 1280px) {
+  .section-heading__box .btn-box .button {
+    margin-bottom: 0;
+  }
+}
 .section-heading__box .btn-box .button:nth-child(2) {
   margin-bottom: 72px;
 }
 @media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
+  .section-heading__box .btn-box .button:nth-child(2) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1280px) {
   .section-heading__box .btn-box .button:nth-child(2) {
     margin-bottom: 0;
   }
