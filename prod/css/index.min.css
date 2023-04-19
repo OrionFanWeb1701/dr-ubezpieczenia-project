@@ -899,6 +899,7 @@ body {
 @media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .button:first-child {
     margin-right: 16px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 768px) {
@@ -2542,11 +2543,6 @@ html {
 @media (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
   .section-heading__box .btn-box .button:nth-child(2) {
     margin-bottom: 0;
-  }
-}
-@media (min-width: 768px) {
-  .section-heading__box .btn-box .button:nth-child(2) {
-    margin-bottom: 24px;
   }
 }
 .section-heading__more {

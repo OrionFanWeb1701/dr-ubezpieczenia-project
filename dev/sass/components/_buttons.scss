@@ -37,6 +37,7 @@
 	&:first-child {
 		@include mobile-landscape {
 			margin-right: 16px;
+			margin-bottom: 0;
 		}
 	}
 
