@@ -194,6 +194,7 @@
 
 .active-section {
 	opacity: 1 !important;
+	overflow-x: hidden;
 
 	@include desktop {
 		color: var(--color-white) !important;

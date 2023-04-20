@@ -909,6 +909,7 @@ body {
 
 .active-section {
   opacity: 1 !important;
+  overflow-x: hidden;
 }
 @media (min-width: 1280px) {
   .active-section {
