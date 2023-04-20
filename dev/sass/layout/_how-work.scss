@@ -45,14 +45,14 @@
 					background-color: var(--color-blue-hover-dark);
 				}
 			}
-		}
 
-		.button--message {
-			margin-bottom: 0;
+			&--border-dark {
+				margin-bottom: 0;
 
-			&:hover {
-				background-color: var(--color-dark);
-				color: var(--color-white);
+				&:hover {
+					background-color: var(--color-dark);
+					color: var(--color-white);
+				}
 			}
 		}
 	}

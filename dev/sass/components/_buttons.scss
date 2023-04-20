@@ -51,12 +51,6 @@
 		margin-right: 16px;
 	}
 
-	&--message {
-		@include desktop {
-			width: max-content;
-		}
-	}
-
 	&--border-white {
 		border: 1px solid var(--color-white);
 
