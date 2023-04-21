@@ -132,6 +132,14 @@
 			justify-content: center;
 			align-items: center;
 		}
+
+		&--location {
+			.img {
+				padding: 8px;
+				border-radius: var(--border-radius-circle);
+				background-color: var(--color-green);
+			}
+		}
 	}
 
 	&__link {
