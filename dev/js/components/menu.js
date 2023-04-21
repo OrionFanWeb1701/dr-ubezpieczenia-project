@@ -5,7 +5,6 @@ const navigation = () => {
 	const menuItems = document.querySelectorAll('.menu-item');
 	const btnMenu = document.querySelector('.btn-menu');
 	const stickyPhone = document.querySelector('.sticky-phone');
-	const html = document.querySelector('html');
 
 	const changeStyleMenu = () => {
 		menuList.classList.toggle('active-menu');

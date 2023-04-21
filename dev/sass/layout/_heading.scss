@@ -79,6 +79,7 @@
 
 		.heading-text {
 			padding-bottom: 32px;
+			color: var(--color-white);
 
 			@include mobile-landscape {
 				display: none;
@@ -90,6 +91,7 @@
 
 			@include desktop {
 				padding-bottom: 64px;
+				color: var(--color-heading-text);
 			}
 		}
 
